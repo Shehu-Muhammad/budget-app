@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — PennyFlow</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <div class="app-grid">
+    <aside class="sidebar">
+      <div class="brand">
+        <h3>PennyFlow</h3>
+      </div>
+      <nav class="nav">
+        <a href="dashboard.html" class="nav-item active">Dashboard</a>
+        <a href="add-transaction.html" class="nav-item">Add Transaction</a>
+        <a href="settings.html" class="nav-item">Settings</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button id="logoutBtn" class="btn btn-ghost">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="main-header">
+        <h2>Overview</h2>
+      </header>
+
+      <section class="summary-cards">
+        <div class="card small">
+          <div class="label">Income (This month)</div>
+          <div class="value" id="incomeTotal">$0</div>
+        </div>
+        <div class="card small">
+          <div class="label">Expenses (This month)</div>
+          <div class="value" id="expenseTotal">$0</div>
+        </div>
+        <div class="card small">
+          <div class="label">Balance</div>
+          <div class="value" id="balanceTotal">$0</div>
+        </div>
+      </section>
+
+      <section class="charts">
+        <div class="card">
+          <h4>Spending by category</h4>
+          <canvas id="categoryChart" height="200"></canvas>
+        </div>
+
+        <div class="card">
+          <h4>Recent transactions</h4>
+          <ul id="transactionList" class="transaction-list"></ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/transactions.js"></script>
+  <script type="module" src="js/charts.js"></script>
+  <script type="module" src="js/ui.js"></script>
+</body>
+</html>
