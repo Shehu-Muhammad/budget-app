@@ -1,0 +1,19 @@
+.app-grid{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+.sidebar{padding:24px;background:#fff;border-right:1px solid #f0f0f0;display:flex;flex-direction:column;justify-content:space-between}
+.brand h3{margin:0}
+.nav{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.nav-item{padding:10px;border-radius:8px;color:var(--muted);text-decoration:none}
+.nav-item.active{background:#f1f5f9;color:var(--accent)}
+.main{padding:24px;background:var(--bg)}
+.main-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.summary-cards{display:flex;gap:12px;margin-bottom:16px}
+.card.small{flex:1;padding:12px;text-align:left}
+.card.small .label{font-size:13px;color:var(--muted)}
+.card.small .value{font-weight:700;font-size:20px;margin-top:6px}
+.charts{display:grid;grid-template-columns:1fr 380px;gap:12px}
+.transaction-list{list-style:none;padding:0;margin:0}
+.transaction-list li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #f1f1f1}
+@media (max-width:900px){
+  .app-grid{grid-template-columns:1fr}
+  .charts{grid-template-columns:1fr}
+}
