@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign in — PennyFlow</title>
+  <link rel="stylesheet" href="css/forms.css" />
+</head>
+<body>
+  <main class="form-page container">
+    <div class="card">
+      <h2>Welcome back</h2>
+
+      <label for="login-email">Email</label>
+      <input id="login-email" type="email" placeholder="you@example.com">
+
+      <label for="login-password">Password</label>
+      <input id="login-password" type="password" placeholder="Your password">
+
+      <button id="login-btn" class="btn">Sign in</button>
+
+      <p class="muted">New? <a href="signup.html">Create account</a></p>
+    </div>
+  </main>
+
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>
