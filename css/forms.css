@@ -1,0 +1,7 @@
+/* used by login, signup, add-transaction */
+.form-page{min-height:80vh;display:flex;align-items:center;justify-content:center}
+.card{width:100%;max-width:440px}
+label{display:block;margin-top:12px;color:var(--muted);font-size:13px}
+input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9f0;margin-top:6px}
+input[type=number]{-moz-appearance:textfield}
+input::placeholder{color:#c7c9d2}
