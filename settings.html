@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Settings — PennyFlow</title>
+  <link rel="stylesheet" href="css/forms.css" />
+</head>
+<body>
+  <main class="form-page container">
+    <div class="card">
+      <h2>Settings</h2>
+
+      <label for="currency">Currency</label>
+      <select id="currency">
+        <option value="USD">$ — USD</option>
+        <option value="EUR">€ — EUR</option>
+      </select>
+
+      <div style="margin-top:12px;">
+        <button id="saveSettingsBtn" class="btn">Save</button>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/ui.js"></script>
+</body>
+</html>
